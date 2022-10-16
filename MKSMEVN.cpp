@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+	int t;
+	cin >> t;
+	while(t--)
+	{
+		int n;
+		cin >> n;
+		int arr[n];
+		int so = 0; int k = 0;
+		for(int i = 0; i<n; i++){
+			cin >> arr[i];
+			if(arr[i]%2 == 1) so++;
+			if(arr[i] == 2) k = 1;
+		}
+		if(so % 2 == 0) cout << "0\n";
+		else if (k == 1) cout << "1\n";
+		else cout << "-1\n";
+	}
+}
